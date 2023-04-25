@@ -1,0 +1,33 @@
+footer {
+  height: 5.5rem;
+  background-color: black;
+
+  @include dflex(center, space-evenly);
+
+  .copy {
+    color: gray;
+
+    a {
+      color: gray;
+      font-weight: bold;
+      font-style: italic;
+
+      &:hover {
+        color: rgb(187, 187, 187);
+      }
+    }
+  }
+
+  .payment {
+    @include dflex;
+    gap: 1rem;
+  }
+
+  @include mobile {
+    height: auto;
+    padding: 2rem 0;
+
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
+}

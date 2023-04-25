@@ -1,0 +1,117 @@
+.header {
+  height: 10rem;
+  @include dflex(center, space-between);
+
+  .head-title {
+    color: $clr-theme;
+
+    h1 {
+      font-weight: 700;
+
+      @include tablet {
+        font-size: 2.2rem;
+      }
+    }
+  }
+
+  .head-nav {
+    @include dflex;
+    gap: 4rem;
+
+    &-items {
+      a {
+        color: $clr-text;
+        font-weight: 600;
+
+        transition: all 0.2s ease-in-out;
+        will-change: color;
+      }
+
+      a:hover {
+        color: $clr-theme;
+      }
+    }
+
+    @include tablet {
+      gap: 2rem;
+    }
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  .head-menu {
+    @include dflex(center, end);
+    gap: 3rem;
+
+    &-items:nth-child(1) {
+      position: relative;
+    }
+
+    &-items:nth-child(1)::after {
+      content: "3";
+      position: absolute;
+      top: -15px;
+      right: -13px;
+      width: 2rem;
+      height: 2rem;
+      line-height: 2rem;
+
+      text-align: center;
+      font-size: 1.3rem;
+      color: white;
+
+      background-color: $clr-theme;
+      border-radius: 50%;
+    }
+
+    @include tablet {
+      display: none;
+    }
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  @include tablet {
+    justify-content: space-around;
+  }
+
+  @include mobile {
+    // display: block;
+    height: 5rem;
+  }
+
+  // Offcanvas CSS
+  .btn {
+    font-size: medium;
+  }
+
+  .offcanvas-title {
+    font-size: 2rem;
+  }
+
+  .offcanvas-end {
+    width: 20rem;
+    height: 22.4rem;
+
+    overflow: hidden;
+    border-radius: 1rem;
+  }
+
+  .dropdown-item {
+    a {
+      color: $clr-text;
+    }
+
+    &:hover {
+      background-color: $clr-theme;
+
+      a {
+        color: white;
+      }
+    }
+  }
+}

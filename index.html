@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sun Tech</title>
+    <!-- fav icon  -->
+    <link
+      rel="shortcut icon"
+      href="./assets/imgs/icon/512.png"
+      type="image/png"
+    />
+    <link
+      rel="shortcut icon"
+      href="./assets/imgs/icon/192.png"
+      type="image/png"
+    />
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+      defer
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+      defer
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <!-- custom  -->
+    <link rel="stylesheet" href="./assets/css/main.min.css" />
+  </head>
+
+  <body>
+    <div id="app">
+      <header>
+        <section class="wrapper header">
+          <div class="head-title">
+            <h1>SUNTECH VIỆT NAM</h1>
+          </div>
+
+          <ul class="head-nav m-0">
+            <li class="head-nav-items">
+              <a href="#">HOME</a>
+            </li>
+            <li class="head-nav-items">
+              <a href="#">WOMEN</a>
+            </li>
+            <li class="head-nav-items">
+              <a href="#">MEN</a>
+            </li>
+            <li class="head-nav-items">
+              <a href="#">KIDS</a>
+            </li>
+            <li class="head-nav-items">
+              <a href="#">JEWELRY</a>
+            </li>
+            <li class="head-nav-items">
+              <a href="#">ACCESSORIES</a>
+            </li>
+          </ul>
+
+          <!-- START OFF CANVAS  -->
+          <div class="d-md-none">
+            <button
+              class="btn btn-outline-success"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasScrolling"
+              aria-controls="offcanvasScrolling"
+            >
+              <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <div
+              class="offcanvas offcanvas-end"
+              data-bs-scroll="true"
+              data-bs-backdrop="false"
+              tabindex="-1"
+              id="offcanvasScrolling"
+              aria-labelledby="offcanvasScrollingLabel"
+            >
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasScrollingLabel">
+                  Categories
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close text-reset"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <ul class="text-center">
+                <li class="dropdown-item">
+                  <a href="#">HOME</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#">WOMEN</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#">MEN</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#">KIDS</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#">JEWELRY</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#">ACCESSORIES</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- END OFF CANVAS  -->
+
+          <ul class="head-menu m-0">
+            <li class="head-menu-items">
+              <a href="#">
+                <img src="./assets/imgs/header/cart.png" alt="cart" />
+              </a>
+            </li>
+            <li class="head-menu-items">
+              <a href="#">
+                <img src="./assets/imgs/header/search.png" alt="search" />
+              </a>
+            </li>
+            <li class="head-menu-items">
+              <a href="#">
+                <img src="./assets/imgs/header/menu.png" alt="menu" />
+              </a>
+            </li>
+          </ul>
+        </section>
+      </header>
+
+      <main>
+        <div class="banner">
+          <div class="banner-title">
+            <h2 class="m-0">THE BEST</h2>
+            <h2 class="m-0">WOOCOMMERCE</h2>
+          </div>
+          <div class="banner-img">
+            <img src="./assets/imgs/main/banner_picture.jpg" alt="banner pic" />
+          </div>
+        </div>
+
+        <div class="wrapper seller">
+          <div class="seller-title">
+            <h3>BEST SELLER</h3>
+            <p>The best productions from us</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+              doloremque deleniti omnis ullam officiis sint pariatur.
+              Repellendus, cumque pariatur? Veniam pariatur dignissimos dolore
+              unde perspiciatis.
+            </p>
+          </div>
+
+          <ul class="seller-products">
+            <li class="seller-products-items">
+              <div class="seller-click">
+                <a href="#">
+                  <img src="./assets/imgs/main/sneaker.jpg" alt="sneaker" />
+                </a>
+              </div>
+              <div class="seller-icon">
+                <div class="seller-icon-items">
+                  <div class="background">
+                    <a href="#">
+                      <img src="./assets/imgs/main/cart.png" alt="cart" />
+                    </a>
+                  </div>
+                  <div class="background">
+                    <a href="#">
+                      <img src="./assets/imgs/main/heart.png" alt="heart" />
+                    </a>
+                  </div>
+                  <div class="background">
+                    <a href="#">
+                      <img src="./assets/imgs/main/change.png" alt="change" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <a href="#">Cruise Dual Analog</a>
+              <p>$250.00</p>
+            </li>
+
+            <li class="seller-products-items">
+              <div class="seller-click">
+                <a href="#">
+                  <img src="./assets/imgs/main/tee.jpg" alt="tee1" />
+                </a>
+              </div>
+              <div class="seller-icon">
+                <div class="seller-icon-items">
+                  <div class="background">
+                    <a href="#">
+                      <img src="./assets/imgs/main/cart.png" alt="cart" />
+                    </a>
+                  </div>
+                  <div class="background">
+                    <a href="#">
+                      <img src="./assets/imgs/main/heart.png" alt="heart" />
+                    </a>
+                  </div>
+                  <div class="background">
+                    <a href="#">
+                      <img src="./assets/imgs/main/change.png" alt="change" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <a href="#">Crown Summit Backpack</a>
+              <p>$150.00</p>
+            </li>
+
+            <li class="seller-products-items">
+              <div class="seller-click">
+                <a href="#">
+                  <img src="./assets/imgs/main/tee.jpg" alt="tee2" />
+                </a>
+              </div>
+              <div class="seller-icon">
+                <div class="seller-icon-items">
+                  <div class="background">
+                    <a href="#">
+                      <img src="./assets/imgs/main/cart.png" alt="cart" />
+                    </a>
+                  </div>
+                  <div class="background">
+                    <a href="#">
+                      <img src="./assets/imgs/main/heart.png" alt="heart" />
+                    </a>
+                  </div>
+                  <div class="background">
+                    <a href="#">
+                      <img src="./assets/imgs/main/change.png" alt="change" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <a href="#">Joust Duffle Bag</a>
+              <p>$330.00</p>
+            </li>
+
+            <li class="seller-products-items">
+              <div class="seller-click">
+                <a href="#">
+                  <img src="./assets/imgs/main/tee.jpg" alt="tee3" />
+                </a>
+              </div>
+              <div class="seller-icon">
+                <div class="seller-icon-items">
+                  <div class="background">
+                    <a href="#">
+                      <img src="./assets/imgs/main/cart.png" alt="cart" />
+                    </a>
+                  </div>
+                  <div class="background">
+                    <a href="#">
+                      <img src="./assets/imgs/main/heart.png" alt="heart" />
+                    </a>
+                  </div>
+                  <div class="background">
+                    <a href="#">
+                      <img src="./assets/imgs/main/change.png" alt="change" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <a href="#">Voyage Yoga Bag</a>
+              <p>$270.00</p>
+            </li>
+          </ul>
+        </div>
+
+        <ul class="special">
+          <li class="special-items">
+            <div class="special-items-img">
+              <img src="./assets/imgs/main/diamond.png" alt="diamond" />
+            </div>
+            <div class="special-items-desc">
+              <p>SPECIAL OFFER</p>
+              <p>Shop Big Save Big</p>
+            </div>
+          </li>
+          <li class="special-items">
+            <div class="special-items-img">
+              <img src="./assets/imgs/main/paper_plane.png" alt="paper_plane" />
+            </div>
+            <div class="special-items-desc">
+              <p>FREE DELIVERY</p>
+              <p>On Orders Above $99</p>
+            </div>
+          </li>
+          <li class="special-items">
+            <div class="special-items-img">
+              <img src="./assets/imgs/main/return.png" alt="return" />
+            </div>
+            <div class="special-items-desc">
+              <p>30 DAYS RETURN</p>
+              <p>Policy We Order</p>
+            </div>
+          </li>
+          <li class="special-items">
+            <div class="special-items-img">
+              <img src="./assets/imgs/main/rocket.png" alt="rocket" />
+            </div>
+            <div class="special-items-desc">
+              <p>FASTEST</p>
+              <p>2 Days Express</p>
+            </div>
+          </li>
+        </ul>
+
+        <ul class="sale">
+          <li class="sale-items">
+            <div class="sale-items-img">
+              <img src="./assets/imgs/main/banner_1.png" alt="banner1" />
+            </div>
+          </li>
+          <li class="sale-items">
+            <div class="sale-items-img">
+              <img src="./assets/imgs/main/banner_2.png" alt="banner2" />
+            </div>
+          </li>
+          <li class="sale-items">
+            <div class="sale-items-img">
+              <img src="./assets/imgs/main/banner_3.png" alt="banner3" />
+            </div>
+          </li>
+        </ul>
+
+        <div class="wrapper feature">
+          <div class="feature-title">
+            <h3>FEATURED PRODUCTS</h3>
+            <p>Newest trends from top brand</p>
+          </div>
+
+          <ul class="feature-products">
+            <li class="feature-products-items">
+              <div class="product-wrapper">
+                <img src="./assets/imgs/main/feature_items.png" alt="fe1" />
+              </div>
+              <div class="product-desc">
+                <h4>Analog Cruise</h4>
+                <p>$250.00</p>
+              </div>
+            </li>
+            <li class="feature-products-items">
+              <div class="product-wrapper">
+                <img src="./assets/imgs/main/feature_items.png" alt="fe2" />
+              </div>
+              <div class="product-desc">
+                <h4>Crown Submit</h4>
+                <p>$160.00</p>
+              </div>
+            </li>
+            <li class="feature-products-items">
+              <div class="product-wrapper">
+                <img src="./assets/imgs/main/feature_items.png" alt="fe3" />
+              </div>
+              <div class="product-desc">
+                <h4>Joust Dunkent</h4>
+                <p>$950.00</p>
+              </div>
+            </li>
+            <li class="feature-products-items">
+              <div class="product-wrapper">
+                <img src="./assets/imgs/main/feature_items.png" alt="fe4" />
+              </div>
+              <div class="product-desc">
+                <h4>Strive Shoudler</h4>
+                <p>$420.00</p>
+              </div>
+            </li>
+            <li class="feature-products-items">
+              <div class="product-wrapper">
+                <img src="./assets/imgs/main/feature_items.png" alt="fe5" />
+              </div>
+              <div class="product-desc">
+                <h4>Wallet Gums</h4>
+                <p>$310.00</p>
+              </div>
+            </li>
+            <li class="feature-products-items">
+              <div class="product-wrapper">
+                <img src="./assets/imgs/main/feature_items.png" alt="fe6" />
+              </div>
+              <div class="product-desc">
+                <h4>Impulse Skirt</h4>
+                <p>$350.00</p>
+              </div>
+            </li>
+            <li class="feature-products-items">
+              <div class="product-wrapper">
+                <img src="./assets/imgs/main/feature_items.png" alt="fe7" />
+              </div>
+              <div class="product-desc">
+                <h4>Sneaker Jordan</h4>
+                <p>$650.00</p>
+              </div>
+            </li>
+            <li class="feature-products-items">
+              <div class="product-wrapper">
+                <img src="./assets/imgs/main/feature_items.png" alt="fe8" />
+              </div>
+              <div class="product-desc">
+                <h4>Bag Intense</h4>
+                <p>$560.00</p>
+              </div>
+            </li>
+            <li class="feature-products-items">
+              <div class="product-wrapper">
+                <img src="./assets/imgs/main/feature_items.png" alt="fe9" />
+              </div>
+              <div class="product-desc">
+                <h4>Earing Doodle</h4>
+                <p>$850.00</p>
+              </div>
+            </li>
+            <li class="feature-products-items">
+              <div class="product-wrapper">
+                <img src="./assets/imgs/main/feature_items.png" alt="fe10" />
+              </div>
+              <div class="product-desc">
+                <h4>Ring Diamond</h4>
+                <p>$680.00</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="discount">
+          <div
+            class="discount-mail"
+            style="background-image: url('./assets/imgs/main/bg_footer.jpg')"
+          >
+            <h3>Get Out Special Discount</h3>
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
+                dignissimos!
+              </p>
+              <p>Register email for special discount!</p>
+            </div>
+            <form id="form_mail" class="form-mail">
+              <input type="text" placeholder="E-mail address ..." required />
+              <button class="form-mail-btn">GET COUPON NOW</button>
+            </form>
+          </div>
+
+          <div class="discount-logo">
+            <div class="logo-wrapper">
+              <img src="./assets/imgs/main/logo_1.png" alt="logo_1" />
+            </div>
+            <div class="logo-wrapper">
+              <img src="./assets/imgs/main/logo_2.png" alt="logo_2" />
+            </div>
+            <div class="logo-wrapper">
+              <img src="./assets/imgs/main/logo_3.png" alt="logo_3" />
+            </div>
+            <div class="logo-wrapper">
+              <img src="./assets/imgs/main/logo_4.png" alt="logo_4" />
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <div class="copy">
+          <span>Copyright 2023 all right reserved</span>
+          <span>
+            - Design by
+            <a
+              href="https://github.com/duyvuxx"
+              target="_blank"
+              rel="noopener no-referrer"
+              class="text-color-secondary"
+            >
+              Duy Vu</a
+            ></span
+          >
+        </div>
+
+        <div class="payment">
+          <div class="payment-img">
+            <img src="./assets/imgs/footer/amazon.png" alt="amazon" />
+          </div>
+          <div class="payment-img">
+            <img src="./assets/imgs/footer/amex.png" alt="amex" />
+          </div>
+          <div class="payment-img">
+            <img src="./assets/imgs/footer/maestro.png" alt="maestro" />
+          </div>
+          <div class="payment-img">
+            <img src="./assets/imgs/footer/paypal.png" alt="paypal" />
+          </div>
+          <div class="payment-img">
+            <img src="./assets/imgs/footer/visa.png" alt="visa" />
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
