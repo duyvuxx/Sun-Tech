@@ -296,27 +296,46 @@
 
   &-products {
     @include dflex;
-    flex-wrap: wrap;
-    column-gap: 3rem;
-    row-gap: 10rem;
+    flex-direction: column;
 
     margin-bottom: 10rem;
 
-    .product-desc {
-      margin-top: 1.4rem;
+    &-items {
+      @include dflex;
+      column-gap: 3rem;
+      row-gap: 10rem;
 
-      h4 {
-        margin: 0;
+      .product-wrapper {
+        margin-top: 1.4rem;
 
-        font-size: 1.8rem;
-        font-weight: bold;
+        h4 {
+          margin: 1rem 0;
+
+          font-size: 1.8rem;
+          font-weight: bold;
+        }
+
+        p {
+          margin: 0;
+
+          color: $clr-theme;
+          font-weight: 500;
+        }
+
+        &:nth-last-child(5) {
+          @include tablet {
+            display: none;
+          }
+        }
       }
 
-      p {
-        margin: 0;
+      @include tablet {
+        flex-wrap: wrap;
+        row-gap: 2rem;
+      }
 
-        color: $clr-theme;
-        font-weight: 500;
+      @include mobile {
+        display: block;
       }
     }
 
