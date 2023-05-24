@@ -307,10 +307,25 @@ footer .payment {
 .seller-title p:nth-of-type(2) {
   width: 30rem;
 }
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+  .seller-title p:nth-of-type(2) {
+    width: 100%;
+  }
+}
 @media (max-width: 46.1875em) {
   .seller-title p:nth-of-type(2) {
     width: 100%;
-    text-align: justify;
+    text-align: center;
+  }
+}
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+  .seller-title {
+    text-align: center;
+  }
+}
+@media (max-width: 46.1875em) {
+  .seller-title {
+    text-align: center;
   }
 }
 .seller-products {
@@ -325,56 +340,60 @@ footer .payment {
           justify-content: center;
   gap: 3rem;
 }
-.seller-products-items {
+.seller-products-items .seller-position {
   position: relative;
 }
-.seller-products-items img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+.seller-products-items .seller-position:hover .seller-bg, .seller-products-items .seller-position:hover .seller-base {
+  opacity: 1;
 }
-.seller-products-items .seller-click {
-  position: relative;
+.seller-products-items .seller-position:hover .seller-base {
+  cursor: pointer;
 }
-.seller-products-items .seller-click:hover a:nth-child(1)::after {
-  display: block;
-}
-.seller-products-items .seller-click:hover + .seller-icon {
-  display: block;
-}
-@media (max-width: 46.1875em) {
-  .seller-products-items .seller-click > a:nth-child(1) {
-    display: inline-block;
-    max-width: 20rem;
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+  .seller-products-items .seller-click {
+    max-width: 30rem;
   }
 }
-.seller-products-items .seller-click > a:nth-child(1)::after {
-  content: "";
+.seller-products-items .seller-bg {
+  background-color: rgba(236, 236, 236, 0.363);
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(255, 255, 255, 0.63);
-  display: none;
+  opacity: 0;
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
 }
-.seller-products-items .seller-icon {
+.seller-products-items .seller-base {
   position: absolute;
-  top: 1rem;
-  right: 1rem;
-  display: none;
+  top: 2rem;
+  right: 2rem;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
-.seller-products-items .seller-icon-items img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+.seller-products-items .seller-base-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  background-color: #3cb878;
 }
-.seller-products-items .seller-icon-items .background {
-  margin-bottom: 0.5rem;
-  padding: 1rem;
-  background-color: green;
+.seller-products-items .seller-base img {
+  width: 2.5rem;
+  height: 3rem;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .seller-products-items > a {
   display: inline-block;
@@ -403,6 +422,12 @@ footer .payment {
     text-align: center;
   }
 }
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+  .seller-products {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
 @media (max-width: 46.1875em) {
   .seller-products {
     -ms-flex-wrap: wrap;
@@ -412,6 +437,10 @@ footer .payment {
 }
 @media (min-width: 46.25em) and (max-width: 63.9375em) {
   .seller {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin: 5rem auto;
     gap: 3rem;
   }
@@ -653,6 +682,12 @@ footer .payment {
     font-size: 3rem;
   }
 }
+@media (max-width: 46.1875em) {
+  .discount-mail h3 {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+}
 .discount-mail p {
   margin: 0;
   text-align: center;
@@ -683,7 +718,7 @@ footer .payment {
 }
 @media (max-width: 46.1875em) {
   .discount-mail .form-mail input {
-    width: 40rem;
+    max-width: 20rem;
     height: 4rem;
     border-radius: 7px;
   }
@@ -699,6 +734,14 @@ footer .payment {
 }
 .discount-mail .form-mail-btn:hover {
   opacity: 0.8;
+}
+@media (max-width: 46.1875em) {
+  .discount-mail .form-mail-btn {
+    padding: 0 1rem;
+    height: 2rem;
+    line-height: 2rem;
+    font-size: 1.2rem;
+  }
 }
 @media (min-width: 46.25em) and (max-width: 63.9375em) {
   .discount-mail .form-mail {
