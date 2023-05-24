@@ -403,6 +403,7 @@ footer .payment {
 }
 @media (min-width: 46.25em) and (max-width: 63.9375em) {
   .seller-products-items > a {
+    width: 100%;
     text-align: center;
   }
 }
