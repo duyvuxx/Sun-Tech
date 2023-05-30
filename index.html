@@ -48,12 +48,6 @@
       defer
     ></script>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-      crossorigin="anonymous"
-      defer
-    ></script>
     <!-- custom  -->
     <link rel="stylesheet" href="./assets/css/main.min.css" />
   </head>
@@ -71,30 +65,30 @@
               <a href="#">HOME</a>
             </li>
             <li class="head-nav-items">
-              <a href="#">WOMEN</a>
+              <a href="#women">WOMEN</a>
             </li>
             <li class="head-nav-items">
-              <a href="#">MEN</a>
+              <a href="#man">MEN</a>
             </li>
             <li class="head-nav-items">
               <a href="#">KIDS</a>
             </li>
             <li class="head-nav-items">
-              <a href="#">JEWELRY</a>
+              <a href="#jewery">JEWELRY</a>
             </li>
             <li class="head-nav-items">
               <a href="#">ACCESSORIES</a>
             </li>
           </ul>
 
-          <!-- START OFF CANVAS  -->
+          <!-- START OFF CANVAS 2  -->
           <div class="d-md-none">
             <button
               class="btn btn-outline-success"
               type="button"
               data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasScrolling"
-              aria-controls="offcanvasScrolling"
+              data-bs-target="#offcanvasRight"
+              aria-controls="offcanvasRight"
             >
               <i class="fa-solid fa-bars"></i>
             </button>
@@ -102,15 +96,12 @@
             <div
               class="offcanvas offcanvas-end"
               data-bs-scroll="true"
-              data-bs-backdrop="false"
               tabindex="-1"
-              id="offcanvasScrolling"
-              aria-labelledby="offcanvasScrollingLabel"
+              id="offcanvasRight"
+              aria-labelledby="offcanvasRightLabel"
             >
               <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasScrollingLabel">
-                  Categories
-                </h5>
+                <h5 id="offcanvasRightLabel">Categories</h5>
                 <button
                   type="button"
                   class="btn-close text-reset"
@@ -118,29 +109,29 @@
                   aria-label="Close"
                 ></button>
               </div>
-              <ul class="text-center">
-                <li class="dropdown-item">
+              <ul class="offcanvas-body">
+                <li>
                   <a href="#">HOME</a>
                 </li>
-                <li class="dropdown-item">
-                  <a href="#">WOMEN</a>
+                <li>
+                  <a href="#women">WOMEN</a>
                 </li>
-                <li class="dropdown-item">
-                  <a href="#">MEN</a>
+                <li>
+                  <a href="#man">MEN</a>
                 </li>
-                <li class="dropdown-item">
+                <li>
                   <a href="#">KIDS</a>
                 </li>
-                <li class="dropdown-item">
-                  <a href="#">JEWELRY</a>
+                <li>
+                  <a href="#jewery">JEWELRY</a>
                 </li>
-                <li class="dropdown-item">
+                <li>
                   <a href="#">ACCESSORIES</a>
                 </li>
               </ul>
             </div>
           </div>
-          <!-- END OFF CANVAS  -->
+          <!-- END OFF CANVAS 2  -->
 
           <ul class="head-menu m-0">
             <li class="head-menu-items">
@@ -173,7 +164,7 @@
           </div>
         </div>
 
-        <div class="wrapper seller">
+        <div id="man" class="wrapper seller">
           <div class="seller-title">
             <h3>BEST SELLER</h3>
             <p>The best productions from us</p>
@@ -288,7 +279,7 @@
           </ul>
         </div>
 
-        <ul class="special">
+        <ul id="jewery" class="special">
           <li class="special-items">
             <div class="special-items-img">
               <img src="./assets/imgs/main/diamond.png" alt="diamond" />
@@ -345,7 +336,7 @@
           </li>
         </ul>
 
-        <div class="wrapper feature">
+        <div id="women" class="wrapper feature">
           <div class="feature-title">
             <h3>FEATURED PRODUCTS</h3>
             <p>Newest trends from top brand</p>
@@ -460,7 +451,7 @@
         <div class="copy">
           <span>Copyright 2023 all right reserved</span>
           <span>
-            - Design by
+            Design by
             <a
               href="https://github.com/duyvuxx"
               target="_blank"

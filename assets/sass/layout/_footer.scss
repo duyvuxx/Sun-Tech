@@ -7,6 +7,12 @@ footer {
   .copy {
     color: gray;
 
+    span {
+      @include mobile {
+        display: inline-block;
+      }
+    }
+
     a {
       color: gray;
       font-weight: bold;
@@ -27,6 +33,7 @@ footer {
     height: auto;
     padding: 2rem 0;
 
+    text-align: center;
     flex-direction: column-reverse;
     gap: 1rem;
   }

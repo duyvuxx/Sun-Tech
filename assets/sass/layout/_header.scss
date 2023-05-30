@@ -89,29 +89,41 @@
     font-size: medium;
   }
 
-  .offcanvas-title {
-    font-size: 2rem;
+  .offcanvas-header {
+    > h5 {
+      font-size: 1.6rem;
+    }
+
+    > button {
+      font-size: 1.2rem;
+    }
   }
 
   .offcanvas-end {
-    width: 20rem;
-    height: 22.4rem;
-
-    overflow: hidden;
-    border-radius: 1rem;
+    width: 14rem;
   }
 
-  .dropdown-item {
-    a {
-      color: $clr-text;
-    }
+  .offcanvas-body {
+    padding: 0 !important;
 
-    &:hover {
-      background-color: $clr-theme;
-
+    li {
       a {
-        color: white;
+        display: inline-block;
+        width: 100%;
+        padding: 1rem;
+
+        color: $clr-theme;
+        font-size: 1.4rem;
+      }
+
+      &:hover {
+        background-color: $clr-theme;
+
+        a {
+          color: white;
+        }
       }
     }
+    // width: 100rem;
   }
 }
